@@ -1,0 +1,218 @@
+@import "reset.css";
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&display=swap');
+
+body {
+    margin:0px;
+    padding: 10px;
+    font-family: 'Alexandria', sans-serif;
+    background-color:#d7d7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+}
+
+.screen {
+    width: 360px;
+    height: 880px; 
+    margin: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.main {
+    padding: 10px;
+} 
+.playing {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playing__cover {
+    width: 100px;
+    border-radius: 50px;
+}
+.playing__title {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.playing__singer {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.button {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button__detail {
+    width: 120px;
+    height: 45px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.button__detail__shuffle {
+    margin: 0px 10px;
+    width: 120px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button__detail__like {
+    margin: 0px 10px;
+    width: 120px;
+    height: 45px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.button__text {
+    margin: 0px 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.playlist {
+    width: 200px;
+}
+li {
+    width: 330px;
+    padding: 15px 25px;
+    margin: 1px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.playlist__active {
+    box-shadow: 0px 3px 10px 0px #cccccc;
+}
+.playlist__cover {
+    width: 50px;
+    border-radius: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: blue;
+}
+.playlist__song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.playlist__singer {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: gray;
+}
+.playlist__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.playlist__more {
+    position: absolute;
+    right: 30px;
+}
+.playlist__control {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 10px;
+
+}
+.control__title {
+    font-size: 16px;
+    font-weight: 700;
+}
+.control__button {
+    margin-right: 20px;
+}
+
+.single__cover {
+    width: 260px;
+    margin: 60px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px 5px rgb(217, 155, 124);
+}
+.single__title {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.single__singer {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    color: grey;
+}
+
+.single__progressbar {
+    margin: 40px 20px;
+    font-size: 12px;
+    /* margin: 0px 10px; */
+    /* background-color: red; */
+}
+.single__progressbar__time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+}
+.single__progressbar__bar {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    /* background-color: yellow */
+}
+.single__control {
+    width: 330px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: black;
+    box-sizing: border-box;
+}
+.single__gray__control {
+    color: gray;
+}

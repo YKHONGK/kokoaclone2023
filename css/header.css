@@ -1,0 +1,22 @@
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  .header__title span{
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .header__title i{
+    margin-right: 25px;
+  }
+  
+  .header__icons span {
+    margin-left: 25px;
+  }

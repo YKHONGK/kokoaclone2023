@@ -1,5 +1,8 @@
 @import "reset.css";
 @import "statusbar.css";
+@import "header.css";
+@import "user-component.css";
+@import "friends.css";
 @import "nav.css";
 @import "variables.css";
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700&display=swap');
@@ -36,6 +39,13 @@ body {
     width: 120px;
     height: 110px;
 }
+
+.chat-list {
+    padding: 0px var(--horizontal-space);
+    height:673px;
+    box-sizing: border-box;
+    background-color: var(--black);
+  }
 
 #no-mobile {
     position:absolute;

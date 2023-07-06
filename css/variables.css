@@ -1,6 +1,8 @@
 :root {
-    --yellow: #FFCE33;
+    --yellow: #FFEB31;
     --black: #121212;
     --white: #E4E8EE;
+    --message: #2D2D2D;
+    --bubble:#383838;
     --horizontal-space: 25px;
 }

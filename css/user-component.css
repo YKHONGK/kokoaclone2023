@@ -66,6 +66,16 @@
     margin-bottom: 10px;
     display: block;
   }
+
+  .badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /* .user-component__column:last-child {
     color: rgba(0, 0, 0, 0.5);
   } */

@@ -1,0 +1,133 @@
+#chat-screen {
+    background-color: #121212;
+    width: 460px;
+    height: 150vh;
+  }
+
+  #chat-screen .alt-header,
+  #chat-screen .status-bar {
+    top: 0;
+    position: fixed;
+    width: 460px;
+    background-color: #121212;
+    box-sizing: border-box;
+  }
+  #chat-screen .status-bar {
+    z-index: 2;
+  }
+  #chat-screen .alt-header {
+    top: 44px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+}
+  .main-chat {
+    margin-top: 120px;
+    display: flex;
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chat__timestamp {
+    color: var(--white);
+    background-color: var(--message);
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+  .chat__timestamp i {
+    padding: 0px 3px;
+  }
+
+  .message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  
+  .message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .message__author {
+    margin-bottom: 5px;
+    display: block;
+    color: var(--white);
+  }
+  .message__info {
+    display: flex;
+    align-items: flex-end;
+  }
+  .message__bubble {
+    color: var(--white);
+    background-color: var(--bubble);
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+  }
+  .message__time,
+  .message__author {
+    color: var(--white);
+    font-size: 14px;
+  }
+  
+  .message-row--own {
+    justify-content: flex-end;
+  }
+  
+  .message-row--own .message__bubble {
+    color: var(--black);
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  
+  .message-row--own .message__info {
+    flex-direction: row-reverse;
+  }
+
+  .reply {
+    position: fixed;
+    bottom: 0;
+    width: 460px;
+    background-color: var(--message);
+    display: flex;
+    justify-content: center;
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .reply .reply__column:first-child {
+    width: 10%;
+  }
+  .reply .reply__column:last-child {
+    width: 90%;
+  }
+ 
+  .reply input {
+    padding: 14px;
+    width:64%;
+    background-color: var(--message);
+    border:none;
+  }
+  
+  .reply input:focus {
+    outline:none;
+    color: var(--white);
+  }
+  
+  .reply__column:last-child > i {
+    margin-left: 25px;
+  }
+  
